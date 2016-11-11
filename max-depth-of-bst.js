@@ -15,6 +15,12 @@ var maxDepth = function(root) {
       return 0;
     } else {
     	//Math.max takes the largest of the two numbers
+    	//Compute maxDepth() on both children, and whichever had the higher one, return + 1
+    	//If tree looked like 3 then left subtree = 2, 2 + 1 = 3
+    	//                   / \
+    	//                  2   4
+    	//                 / \ / \
+    	//                1
       return Math.max(maxDepth(root.left), maxDepth(root.right)) + 1;
     }
 };
