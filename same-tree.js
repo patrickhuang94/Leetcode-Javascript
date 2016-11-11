@@ -22,7 +22,7 @@ var isSameTree = function(p, q) {
     else if (p === null || q === null) {
         return false;
     }
-    
+    //Make sure the values in p and q are the same
     //Only return true if values in p and q are the same, and recurse through left and right nodes of tree
     return (p.val == q.val) && isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
 };
