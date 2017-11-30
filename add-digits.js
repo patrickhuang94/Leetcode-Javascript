@@ -1,6 +1,5 @@
 /**
  * Given num = 38, the process is like: 3 + 8 = 11, 1 + 1 = 2. Since 2 has only one digit, return it.
-
  */
 
 /**
@@ -15,7 +14,7 @@ var addDigits = function(num) {
     var str = num.toString(), //"138", "12"
         n,
         result = 0;
-    
+
     for (var i = 0; i < str.length; i++) {
         n = parseInt(str.charAt(i));
         result = result + n;
